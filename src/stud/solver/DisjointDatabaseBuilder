@@ -1,0 +1,168 @@
+package stud.solver;
+
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.ArrayDeque;
+import java.util.HashSet;
+import java.util.Queue;
+
+import stud.problem.puzzlePathfinding.SubPuzzleState;
+import stud.problem.puzzlePathfinding.PuzzlePoint;
+
+/**
+ * 该类用于构建拼图问题的不相交集合数据库。
+ */
+public class DisjointDatabaseBuilder {
+
+    private int size; // 拼图的大小
+    private int n; // 稀疏点的数量
+    private int classes; // 分类的数量
+    // 定义静态的稀疏点位置数组
+    public static final int[] positions3 = {1, 2, 3, 4, 5, 6, 7, 8}; // 8-puzzle
+    public static final int[] positions4 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15}; // 15-puzzle
+
+    // 用于广度优先搜索的队列
+    private final Queue<SubPuzzleState> stateQueue = new ArrayDeque<>();
+
+    /**
+     * 构造函数，初始化拼图问题的参数。
+     * @param size 拼图的大小
+     * @param classes 分类的数量
+     * @param n 稀疏点的数量
+     */
+    public DisjointDatabaseBuilder(int size, int classes, int n) {
+        this.size = size;
+        this.classes = classes;
+        this.n = n;
+    }
+
+    /**
+     * 生成不相交集合（简洁实现）
+     * @param root 根状态
+     * @param num  状态的数量（预计的索引范围大小）
+     * @return 包含每个状态成本的数组
+     */
+    public int[] generateDisjointSet(SubPuzzleState root, int num) {
+        stateQueue.clear();
+        stateQueue.add(root);
+        // 使用 HashSet 保存已访问状态的紧凑索引
+        HashSet<Integer> stateSet = new HashSet<>();
+        stateSet.add(root.toIndex());
+        int[] cost = new int[num];
+
+        while (!stateQueue.isEmpty()) {
+            SubPuzzleState state = stateQueue.poll();
+            // 使用 toIndex() 写入紧凑且安全的数组索引
+            int idx = state.toIndex();
+            if (idx >= 0 && idx < num) {
+                cost[idx] = state.getPathCost();
+            }
+            for (int i = 0; i < root.getSparsePointsCount(); i++) {
+                for (int d = 0; d < 4; d++) {
+                    if (state.canMove(i, d)) {
+                        SubPuzzleState child = state.performMove(i, d);
+                        int h = child.toIndex();
+                        if (!stateSet.contains(h)) {
+                            stateQueue.add(child);
+                            stateSet.add(h);
+                        }
+                    }
+                }
+            }
+        }
+        return cost;
+    }
+
+    /**
+     * 将不相交集合的成本数组保存到文件中。
+     * @param cost 包含每个状态成本的数组
+     * @param filename 文件名
+     */
+    public void saveDisjointSet(int[] cost, String filename) {
+        FileWriter writeFile = null; // 文件写入器
+        try {
+            File file = new File("resources/" + filename); // 文件路径
+            if (!file.exists()) {
+                file.getParentFile().mkdirs(); // 创建目录
+                file.createNewFile(); // 如果文件不存在，则创建文件
+            }
+            writeFile = new FileWriter(file); // 创建文件写入器
+            for (int val : cost) { // 遍历成本数组
+                writeFile.write(val + "\t"); // 写入每个成本值
+            }
+            writeFile.write("\n"); // 写入换行符
+        } catch (Exception e) {
+            e.printStackTrace(); // 打印异常信息
+        } finally {
+            try {
+                if (writeFile != null) { // 如果文件写入器不为空，则关闭
+                    writeFile.close();
+                }
+            } catch (IOException e) {
+                e.printStackTrace(); // 打印异常信息
+            }
+        }
+    }
+
+    /**
+     * 构建拼图问题的不相交集合数据库。
+     * @param size 拼图的大小
+     * @param classes 分类的数量
+     * @param n 稀疏点的数量
+     * @param points 变长参数，包含多个拼图状态的稀疏点数组
+     */
+    public static void buildPuzzle(int size, int classes, int n, PuzzlePoint[]... points) {
+        DisjointDatabaseBuilder builder = new DisjointDatabaseBuilder(size, classes, n); // 创建构建器对象
+        for (int i = 0; i < points.length; i++) { // 遍历所有拼图状态
+            SubPuzzleState root = new SubPuzzleState(size, n, n, points[i]); // 创建根状态
+            int[] cost = builder.generateDisjointSet(root, root.calculateStates()); // 生成不相交集合
+            builder.saveDisjointSet(cost, "db" + size + "_" + classes + "(" + (i + 1) + ").txt"); // 保存不相交集合
+        }
+    }
+
+    /**
+     * 程序的主入口点。
+     * @param args 命令行参数
+     */
+    public static void main(String[] args) {
+        // 定义8-puzzle的两个初始状态
+        PuzzlePoint[] points1 = {
+                new PuzzlePoint(0, 0, 1),
+                new PuzzlePoint(0, 1, 2),
+                new PuzzlePoint(0, 2, 3),
+                new PuzzlePoint(1, 0, 4)
+        };
+        PuzzlePoint[] points2 = {
+                new PuzzlePoint(1, 1, 5),
+                new PuzzlePoint(1, 2, 6),
+                new PuzzlePoint(2, 0, 7),
+                new PuzzlePoint(2, 1, 8)
+        };
+        buildPuzzle(3, 2, 4, points1, points2); // 8-puzzle分成两组
+
+        // 定义15-puzzle的三个初始状态
+        PuzzlePoint[] points3 = {
+                new PuzzlePoint(0, 0, 1),
+                new PuzzlePoint(1, 0, 5),
+                new PuzzlePoint(1, 1, 6),
+                new PuzzlePoint(2, 0, 9),
+                new PuzzlePoint(2, 1, 10),
+                new PuzzlePoint(3, 0, 13)
+        };
+        PuzzlePoint[] points4 = {
+                new PuzzlePoint(1, 2, 7),
+                new PuzzlePoint(1, 3, 8),
+                new PuzzlePoint(2, 2, 11),
+                new PuzzlePoint(2, 3, 12),
+                new PuzzlePoint(3, 1, 14),
+                new PuzzlePoint(3, 2, 15)
+        };
+        PuzzlePoint[] points5 = {
+                new PuzzlePoint(0, 1, 2),
+                new PuzzlePoint(0, 2, 3),
+                new PuzzlePoint(0, 3, 4)
+        };
+        buildPuzzle(4, 3, 6, points3, points4, points5); // 15-puzzle分成三组
+    }
+}

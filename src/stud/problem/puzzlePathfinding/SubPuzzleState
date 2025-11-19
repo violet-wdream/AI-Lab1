@@ -1,0 +1,238 @@
+package stud.problem.puzzlePathfinding;
+
+import stud.solver.DisjointDatabaseBuilder;
+
+/**
+ * 表示NPuzzle状态的子分组，用于路径查找算法中的不相交集合。
+ */
+public class SubPuzzleState {
+
+    // 分组的最大数量
+    private int maxGroups;
+    // 稀疏点的数量
+    private int sparsePointsCount;
+    // 网格的大小
+    private int gridSize;
+    // 稀疏点数组
+    private PuzzlePoint[] sparsePointsArray;
+
+    // 启发式估计值
+    private int estimation = 0;
+    // 到达目标状态的路径成本
+    private int pathCost = 0;
+
+    // 当前状态的父状态
+    private SubPuzzleState ancestor = null;
+
+    // 可能的移动方向
+    private static final int[][] moveOptions = {
+            {0, 1}, {1, 0}, {0, -1}, {-1, 0}
+    };
+
+    /**
+     * 构造函数，初始化子拼图状态。
+     * @param gridSize 网格大小
+     * @param sparsePointsCount 稀疏点数量
+     * @param maxGroups 分组的最大数量
+     * @param sparsePointsArray 稀疏点数组
+     */
+    public SubPuzzleState(int gridSize, int sparsePointsCount, int maxGroups, PuzzlePoint[] sparsePointsArray) {
+        this.sparsePointsCount = sparsePointsCount;
+        this.gridSize = gridSize;
+        this.sparsePointsArray = new PuzzlePoint[sparsePointsCount];
+        for (int index = 0; index < sparsePointsCount; index++) {
+            this.sparsePointsArray[index] = new PuzzlePoint(sparsePointsArray[index]);
+        }
+        this.maxGroups = maxGroups;
+    }
+
+    /**
+     * 复制构造函数，用于创建当前状态的副本。
+     * @param otherState 要复制的状态
+     */
+    public SubPuzzleState(SubPuzzleState otherState) {
+        this.sparsePointsCount = otherState.sparsePointsCount;
+        this.gridSize = otherState.gridSize;
+        this.sparsePointsArray = new PuzzlePoint[sparsePointsCount];
+        for (int index = 0; index < sparsePointsCount; index++) {
+            this.sparsePointsArray[index] = new PuzzlePoint(otherState.sparsePointsArray[index]);
+        }
+        this.maxGroups = otherState.maxGroups;
+    }
+
+    /**
+     * 可视化当前状态的稀疏点。
+     */
+    public void visualize() {
+        for (int index = 0; index < sparsePointsCount; index++) {
+            System.out.print("(" + sparsePointsArray[index].getRow() + "," + sparsePointsArray[index].getCol() + "," + sparsePointsArray[index].getVal() + ") ");
+        }
+        System.out.println();
+    }
+
+    /**
+     * 检查是否可以在指定方向上移动指定的稀疏点。
+     * @param index 稀疏点的索引
+     * @param direction 移动方向
+     * @return 是否可以移动
+     */
+    public boolean canMove(int index, int direction) {
+        int newRow = sparsePointsArray[index].getRow() + moveOptions[direction][0];
+        int newCol = sparsePointsArray[index].getCol() + moveOptions[direction][1];
+        if (newRow < 0 || newRow >= gridSize || newCol < 0 || newCol >= gridSize)
+            return false;
+        for (int otherIndex = 0; otherIndex < sparsePointsCount; otherIndex++) {
+            if (sparsePointsArray[otherIndex].getRow() == newRow && sparsePointsArray[otherIndex].getCol() == newCol) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    /**
+     * 获取稀疏点的数量。
+     * @return 稀疏点的数量
+     */
+    public int getSparsePointsCount() {
+        return sparsePointsCount;
+    }
+
+    /**
+     * 获取启发式估计值。
+     * @return 启发式估计值
+     */
+    public int getEstimation() {
+        return estimation;
+    }
+
+    /**
+     * 获取路径成本。
+     * @return 路径成本
+     */
+    public int getPathCost() {
+        return pathCost;
+    }
+
+    /**
+     * 获取父状态。
+     * @return 父状态
+     */
+    public SubPuzzleState getAncestor() {
+        return ancestor;
+    }
+
+    /**
+     * 计算可能的状态数量。
+     * @return 可能的状态数量
+     */
+    public int calculateStates() {
+        return (int) Math.pow(gridSize * gridSize, sparsePointsCount);
+    }
+
+    /**
+     * 将当前稀疏点位置映射为紧凑的整数索引，范围 [0, calculateStates()-1]
+     * 映射方式：将每个稀疏点的位置 (row*gridSize+col) 作为 base=(gridSize*gridSize) 的一位，
+     * 按序组合成一个整数。这保证了对所有可能的位置组合的唯一且紧凑的编码。
+     * @return 紧凑的整数索引
+     */
+    public int toIndex() {
+        int base = gridSize * gridSize;
+        int idx = 0;
+        for (int i = 0; i < sparsePointsCount; i++) {
+            int pos = sparsePointsArray[i].getRow() * gridSize + sparsePointsArray[i].getCol();
+            idx = idx * base + pos;
+        }
+        return idx;
+    }
+
+    @Override
+    public int hashCode() {
+        int hashValue = 0;
+        int[] positions = (gridSize == 3) ? DisjointDatabaseBuilder.positions3 : DisjointDatabaseBuilder.positions4;
+
+        for (int i = 0; i < sparsePointsCount; i++) {
+            int pointPosition = sparsePointsArray[i].getRow() * gridSize + sparsePointsArray[i].getCol();
+            int pointHash = pointPosition * positions[sparsePointsArray[i].getVal()];
+            hashValue = 31 * hashValue + pointHash;  // 使用乘法累积生成唯一哈希值
+        }
+
+        return hashValue;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+
+        SubPuzzleState anotherState = (SubPuzzleState) obj;
+        if (this.sparsePointsCount != anotherState.sparsePointsCount || this.gridSize != anotherState.gridSize) return false;
+
+        for (int i = 0; i < sparsePointsCount; i++) {
+            if (!this.sparsePointsArray[i].equals(anotherState.sparsePointsArray[i])) return false;
+        }
+        return true;
+    }
+
+    /**
+     * 执行移动操作，并更新路径成本。
+     * @param index 要移动的稀疏点索引
+     * @param d 移动方向
+     * @return 新的状态
+     */
+    public SubPuzzleState performMove(int index, int d) {
+        SubPuzzleState newState = new SubPuzzleState(this);
+        int newX = newState.sparsePointsArray[index].getRow() + moveOptions[d][0];
+        int newY = newState.sparsePointsArray[index].getCol() + moveOptions[d][1];
+        newState.sparsePointsArray[index].setRow(newX);
+        newState.sparsePointsArray[index].setCol(newY);
+        newState.pathCost = this.pathCost + 1;
+        newState.ancestor = this;
+        return newState;
+    }
+
+    /**
+     * 计算曼哈顿距离。
+     * @return 曼哈顿距离的启发式值
+     */
+    private int calculateManhattanDistance() {
+        int distance = 0;
+        for (int i = 0; i < sparsePointsCount; i++) {
+            int targetRow = (sparsePointsArray[i].getVal() - 1) / gridSize;
+            int targetCol = (sparsePointsArray[i].getVal() - 1) % gridSize;
+            distance += Math.abs(sparsePointsArray[i].getRow() - targetRow) + Math.abs(sparsePointsArray[i].getCol() - targetCol);
+        }
+        return distance;
+    }
+
+    /**
+     * 计算线性冲突的启发式值。
+     * @return 线性冲突的启发式值
+     */
+    private int calculateLinearConflict() {
+        int conflict = 0;
+        for (int i = 0; i < sparsePointsCount; i++) {
+            int targetRow = (sparsePointsArray[i].getVal() - 1) / gridSize;
+            int targetCol = (sparsePointsArray[i].getVal() - 1) % gridSize;
+            if (targetCol < gridSize - 1 && sparsePointsArray[i].getRow() == targetRow) {
+                for (int j = 0; j < sparsePointsCount; j++) {
+                    if (sparsePointsArray[i].getRow() == sparsePointsArray[j].getRow() &&
+                            sparsePointsArray[i].getCol() == sparsePointsArray[j].getCol() - 1 &&
+                            sparsePointsArray[i].getVal() > sparsePointsArray[j].getVal()) {
+                        conflict += 2;
+                    }
+                }
+            }
+        }
+        return conflict;
+    }
+
+    /**
+     * 计算总的启发式值，包含曼哈顿距离和线性冲突。
+     * @return 启发式值
+     */
+    public int calculateHeuristic() {
+        int heuristicValue = calculateManhattanDistance() + calculateLinearConflict();
+        this.estimation = heuristicValue;
+        return heuristicValue;
+    }
+}
