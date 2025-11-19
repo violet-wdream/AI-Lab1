@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="GBK">
+    <file url="file://$PROJECT_DIR$/src/core/runner/SearchTester.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/stud/problem/pathfinding/Direction.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/stud/problem/puzzlePathfinding/Direction.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/stud/queue/ListFrontier.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/stud/runner/WalkerFeeder.java" charset="UTF-8" />
+    <file url="PROJECT" charset="GBK" />
+  </component>
+</project>
