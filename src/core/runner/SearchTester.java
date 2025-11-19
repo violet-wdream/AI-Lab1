@@ -158,7 +158,7 @@ public final class SearchTester {
             //IDA* 4*4最后一个完全逆序样例跑不了，内存溢出（18G以上）
             else if(step == 2)
             {
-                heuristics.add(MISPLACED);
+//                heuristics.add(MISPLACED);//不在位将牌只能跑3*3的
                 heuristics.add(MANHATTAN);
             }
             //NPuzzle问题的第三阶段，使用Disjoint Pattern A* IDA*， 可以轻松跑完跑所有样例

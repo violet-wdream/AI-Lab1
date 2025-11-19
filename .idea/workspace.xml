@@ -4,12 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e317f0ab-7e08-4cd6-8b8a-5ef923eb8f5a" name="更改" comment="" />
+    <list default="true" id="e317f0ab-7e08-4cd6-8b8a-5ef923eb8f5a" name="更改" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SearchFramework2.1-toStudents/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SearchFramework2.1-toStudents/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/path_states.txt" beforeDir="false" afterPath="$PROJECT_DIR$/path_states.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/experiment_results.csv" beforeDir="false" afterPath="$PROJECT_DIR$/results/experiment_results.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/runner/SearchTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/runner/SearchTester.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "violet-wdream"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/violet-wdream/AI-Lab1.git",
+    "accountId": "77649f19-0f67-4127-9f89-2a2eb50c0de9"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -18,25 +39,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;ignore.preview.features.used&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/IDEs/Idea/IntellijIdea/Projects/npuzzle-master/resources&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.fileTypes&quot;,
-    &quot;应用程序.GUI.executor&quot;: &quot;Run&quot;,
-    &quot;应用程序.NPUZZLE1_1.executor&quot;: &quot;Run&quot;,
-    &quot;应用程序.NPUZZLE3_1.executor&quot;: &quot;Run&quot;,
-    &quot;应用程序.NPUZZLE3_2.executor&quot;: &quot;Run&quot;,
-    &quot;应用程序.NPUZZLE3_3.executor&quot;: &quot;Run&quot;,
-    &quot;应用程序.NPUZZLE_1.executor&quot;: &quot;Run&quot;,
-    &quot;应用程序.NPUZZLE_2.executor&quot;: &quot;Run&quot;,
-    &quot;应用程序.NPUZZLE_3.executor&quot;: &quot;Run&quot;,
-    &quot;应用程序.SearchTester.executor&quot;: &quot;Run&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.preview.features.used": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/IDEs/Idea/IntellijIdea/Projects/npuzzle-master/resources",
+    "settings.editor.selected.configurable": "preferences.fileTypes",
+    "应用程序.GUI.executor": "Run",
+    "应用程序.NPUZZLE1_1.executor": "Run",
+    "应用程序.NPUZZLE3_1.executor": "Run",
+    "应用程序.NPUZZLE3_2.executor": "Run",
+    "应用程序.NPUZZLE3_3.executor": "Run",
+    "应用程序.NPUZZLE_1.executor": "Run",
+    "应用程序.NPUZZLE_2.executor": "Run",
+    "应用程序.NPUZZLE_3.executor": "Run",
+    "应用程序.SearchTester.executor": "Run"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\IDEs\Idea\IntellijIdea\Projects\npuzzle-master\resources" />
@@ -95,10 +118,10 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="应用程序.GUI" />
       <item itemvalue="应用程序.NPUZZLE_1" />
       <item itemvalue="应用程序.NPUZZLE_2" />
       <item itemvalue="应用程序.NPUZZLE_3" />
-      <item itemvalue="应用程序.GUI" />
     </list>
   </component>
   <component name="TaskManager">
