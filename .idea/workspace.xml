@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e317f0ab-7e08-4cd6-8b8a-5ef923eb8f5a" name="更改" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="34ptH37TQcflFGfESSI6qSKmDSc" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;ignore.preview.features.used&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/IDEs/Idea/IntellijIdea/Projects/npuzzle-master/resources&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.fileTypes&quot;,
+    &quot;应用程序.GUI.executor&quot;: &quot;Run&quot;,
+    &quot;应用程序.NPUZZLE1_1.executor&quot;: &quot;Run&quot;,
+    &quot;应用程序.NPUZZLE3_1.executor&quot;: &quot;Run&quot;,
+    &quot;应用程序.NPUZZLE3_2.executor&quot;: &quot;Run&quot;,
+    &quot;应用程序.NPUZZLE3_3.executor&quot;: &quot;Run&quot;,
+    &quot;应用程序.NPUZZLE_1.executor&quot;: &quot;Run&quot;,
+    &quot;应用程序.NPUZZLE_2.executor&quot;: &quot;Run&quot;,
+    &quot;应用程序.NPUZZLE_3.executor&quot;: &quot;Run&quot;,
+    &quot;应用程序.SearchTester.executor&quot;: &quot;Run&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IDEs\Idea\IntellijIdea\Projects\npuzzle-master\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="应用程序.GUI">
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="21" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="core.runner.SearchTester" />
+      <module name="SearchFramework2.1-toStudents" />
+      <option name="PROGRAM_PARAMETERS" value="resources/problems.txt NPUZZLE 1 stud.runner.PuzzleFeeder" />
+      <option name="VM_PARAMETERS" value="-Xms512m -Xmx10g -XX:MaxMetaspaceSize=512m " />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GUI" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="21" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="core.runner.SearchTester" />
+      <module name="SearchFramework2.1-toStudents" />
+      <option name="PROGRAM_PARAMETERS" value="resources/problems3.txt NPUZZLE 3 stud.runner.PuzzleFeeder GUI" />
+      <option name="VM_PARAMETERS" value="-Xms512m -Xmx10g -XX:MaxMetaspaceSize=512m " />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NPUZZLE_1" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="core.runner.SearchTester" />
+      <module name="SearchFramework2.1-toStudents" />
+      <option name="PROGRAM_PARAMETERS" value="resources/problems.txt NPUZZLE 1 stud.runner.PuzzleFeeder" />
+      <option name="VM_PARAMETERS" value="-Xms512m -Xmx10g -XX:MaxMetaspaceSize=512m " />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NPUZZLE_2" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="21" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="core.runner.SearchTester" />
+      <module name="SearchFramework2.1-toStudents" />
+      <option name="PROGRAM_PARAMETERS" value="resources/problems2.txt NPUZZLE 2 stud.runner.PuzzleFeeder" />
+      <option name="VM_PARAMETERS" value="-Xms512m -Xmx15g -XX:MaxMetaspaceSize=512m " />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NPUZZLE_3" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="core.runner.SearchTester" />
+      <module name="SearchFramework2.1-toStudents" />
+      <option name="PROGRAM_PARAMETERS" value="resources/problems3.txt NPUZZLE 3 stud.runner.PuzzleFeeder" />
+      <option name="VM_PARAMETERS" value="-Xms512m -Xmx10g -XX:MaxMetaspaceSize=512m " />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="应用程序.NPUZZLE_1" />
+      <item itemvalue="应用程序.NPUZZLE_2" />
+      <item itemvalue="应用程序.NPUZZLE_3" />
+      <item itemvalue="应用程序.GUI" />
+    </list>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="e317f0ab-7e08-4cd6-8b8a-5ef923eb8f5a" name="更改" comment="" />
+      <created>1761922252002</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1761922252002</updated>
+    </task>
+    <servers />
+  </component>
+</project>
