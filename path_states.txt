@@ -1,0 +1,1847 @@
+Step 0:
+0 5 8 
+4 2 1 
+7 3 6 
+
+Step 1:
+4 5 8 
+0 2 1 
+7 3 6 
+
+Step 2:
+4 5 8 
+2 0 1 
+7 3 6 
+
+Step 3:
+4 5 8 
+2 3 1 
+7 0 6 
+
+Step 4:
+4 5 8 
+2 3 1 
+7 6 0 
+
+Step 5:
+4 5 8 
+2 3 0 
+7 6 1 
+
+Step 6:
+4 5 0 
+2 3 8 
+7 6 1 
+
+Step 7:
+4 0 5 
+2 3 8 
+7 6 1 
+
+Step 8:
+4 3 5 
+2 0 8 
+7 6 1 
+
+Step 9:
+4 3 5 
+2 8 0 
+7 6 1 
+
+Step 10:
+4 3 5 
+2 8 1 
+7 6 0 
+
+Step 11:
+4 3 5 
+2 8 1 
+7 0 6 
+
+Step 12:
+4 3 5 
+2 0 1 
+7 8 6 
+
+Step 13:
+4 3 5 
+2 1 0 
+7 8 6 
+
+Step 14:
+4 3 0 
+2 1 5 
+7 8 6 
+
+Step 15:
+4 0 3 
+2 1 5 
+7 8 6 
+
+Step 16:
+4 1 3 
+2 0 5 
+7 8 6 
+
+Step 17:
+4 1 3 
+0 2 5 
+7 8 6 
+
+Step 18:
+0 1 3 
+4 2 5 
+7 8 6 
+
+Step 19:
+1 0 3 
+4 2 5 
+7 8 6 
+
+Step 20:
+1 2 3 
+4 0 5 
+7 8 6 
+
+Step 21:
+1 2 3 
+4 5 0 
+7 8 6 
+
+Step 22:
+1 2 3 
+4 5 6 
+7 8 0 
+
+Algorithm: IDA*
+During 0.01563 s. we explore 162 nodes, the length of path is 23
+ Close this window to continue...
+Step 0:
+6 4 7 
+8 0 5 
+3 2 1 
+
+Step 1:
+6 4 7 
+0 8 5 
+3 2 1 
+
+Step 2:
+6 4 7 
+3 8 5 
+0 2 1 
+
+Step 3:
+6 4 7 
+3 8 5 
+2 0 1 
+
+Step 4:
+6 4 7 
+3 0 5 
+2 8 1 
+
+Step 5:
+6 0 7 
+3 4 5 
+2 8 1 
+
+Step 6:
+6 7 0 
+3 4 5 
+2 8 1 
+
+Step 7:
+6 7 5 
+3 4 0 
+2 8 1 
+
+Step 8:
+6 7 5 
+3 4 1 
+2 8 0 
+
+Step 9:
+6 7 5 
+3 4 1 
+2 0 8 
+
+Step 10:
+6 7 5 
+3 0 1 
+2 4 8 
+
+Step 11:
+6 0 5 
+3 7 1 
+2 4 8 
+
+Step 12:
+0 6 5 
+3 7 1 
+2 4 8 
+
+Algorithm: IDA*
+During 0.03125 s. we explore 1853 nodes, the length of path is 31
+ Close this window to continue...
+Step 0:
+8 6 7 
+2 5 4 
+0 3 1 
+
+Step 1:
+8 6 7 
+0 5 4 
+2 3 1 
+
+Step 2:
+8 6 7 
+5 0 4 
+2 3 1 
+
+Step 3:
+8 0 7 
+5 6 4 
+2 3 1 
+
+Step 4:
+8 7 0 
+5 6 4 
+2 3 1 
+
+Step 5:
+8 7 4 
+5 6 0 
+2 3 1 
+
+Step 6:
+8 7 4 
+5 6 1 
+2 3 0 
+
+Algorithm: IDA*
+During 0.03125 s. we explore 2412 nodes, the length of path is 31
+ Close this window to continue...
+Step 0:
+8 0 13 6 
+1 15 9 14 
+3 4 5 11 
+7 2 10 12 
+
+Step 1:
+0 8 13 6 
+1 15 9 14 
+3 4 5 11 
+7 2 10 12 
+
+Step 2:
+1 8 13 6 
+0 15 9 14 
+3 4 5 11 
+7 2 10 12 
+
+Step 3:
+1 8 13 6 
+15 0 9 14 
+3 4 5 11 
+7 2 10 12 
+
+Step 4:
+1 8 13 6 
+15 4 9 14 
+3 0 5 11 
+7 2 10 12 
+
+Step 5:
+1 8 13 6 
+15 4 9 14 
+3 5 0 11 
+7 2 10 12 
+
+Algorithm: IDA*
+During 0.15625 s. we explore 36418 nodes, the length of path is 52
+ Close this window to continue...
+Step 0:
+2 9 5 11 
+8 3 4 14 
+7 10 1 12 
+15 0 6 13 
+
+Step 1:
+2 9 5 11 
+8 3 4 14 
+7 10 1 12 
+15 6 0 13 
+
+Step 2:
+2 9 5 11 
+8 3 4 14 
+7 10 1 12 
+15 6 13 0 
+
+Step 3:
+2 9 5 11 
+8 3 4 14 
+7 10 1 0 
+15 6 13 12 
+
+Step 4:
+2 9 5 11 
+8 3 4 14 
+7 10 0 1 
+15 6 13 12 
+
+Step 5:
+2 9 5 11 
+8 3 4 14 
+7 0 10 1 
+15 6 13 12 
+
+Step 6:
+2 9 5 11 
+8 3 4 14 
+0 7 10 1 
+15 6 13 12 
+
+Step 7:
+2 9 5 11 
+8 3 4 14 
+15 7 10 1 
+0 6 13 12 
+
+Step 8:
+2 9 5 11 
+8 3 4 14 
+15 7 10 1 
+6 0 13 12 
+
+Step 9:
+2 9 5 11 
+8 3 4 14 
+15 7 10 1 
+6 13 0 12 
+
+Algorithm: IDA*
+During 1.73438 s. we explore 10181 nodes, the length of path is 55
+ Close this window to continue...
+Step 0:
+4 7 9 0 
+12 10 11 8 
+14 6 15 1 
+2 5 3 13 
+
+Step 1:
+4 7 9 8 
+12 10 11 0 
+14 6 15 1 
+2 5 3 13 
+
+Step 2:
+4 7 9 8 
+12 10 0 11 
+14 6 15 1 
+2 5 3 13 
+
+Step 3:
+4 7 9 8 
+12 0 10 11 
+14 6 15 1 
+2 5 3 13 
+
+Step 4:
+4 7 9 8 
+0 12 10 11 
+14 6 15 1 
+2 5 3 13 
+
+Step 5:
+4 7 9 8 
+14 12 10 11 
+0 6 15 1 
+2 5 3 13 
+
+Step 6:
+4 7 9 8 
+14 12 10 11 
+2 6 15 1 
+0 5 3 13 
+
+Step 7:
+4 7 9 8 
+14 12 10 11 
+2 6 15 1 
+5 0 3 13 
+
+Algorithm: IDA*
+During 10.06250 s. we explore 2011611 nodes, the length of path is 62
+ Close this window to continue...
+Step 0:
+12 10 3 2 
+1 7 14 9 
+0 15 5 6 
+8 4 13 11 
+
+Step 1:
+12 10 3 2 
+1 7 14 9 
+8 15 5 6 
+0 4 13 11 
+
+Step 2:
+12 10 3 2 
+1 7 14 9 
+8 15 5 6 
+4 0 13 11 
+
+Step 3:
+12 10 3 2 
+1 7 14 9 
+8 15 5 6 
+4 13 0 11 
+
+Step 4:
+12 10 3 2 
+1 7 14 9 
+8 15 5 6 
+4 13 11 0 
+
+Step 5:
+12 10 3 2 
+1 7 14 9 
+8 15 5 0 
+4 13 11 6 
+
+Step 6:
+12 10 3 2 
+1 7 14 9 
+8 15 0 5 
+4 13 11 6 
+
+Step 7:
+12 10 3 2 
+1 7 14 9 
+8 0 15 5 
+4 13 11 6 
+
+Step 8:
+12 10 3 2 
+1 7 14 9 
+0 8 15 5 
+4 13 11 6 
+
+Step 9:
+12 10 3 2 
+1 7 14 9 
+4 8 15 5 
+0 13 11 6 
+
+Step 10:
+12 10 3 2 
+1 7 14 9 
+4 8 15 5 
+13 0 11 6 
+
+Step 11:
+12 10 3 2 
+1 7 14 9 
+4 0 15 5 
+13 8 11 6 
+
+Algorithm: IDA*
+During 35.26563 s. we explore 337137 nodes, the length of path is 65
+ Close this window to continue...
+Step 0:
+12 1 5 6 
+2 11 7 9 
+14 10 4 0 
+15 3 13 8 
+
+Step 1:
+12 1 5 6 
+2 11 7 0 
+14 10 4 9 
+15 3 13 8 
+
+Step 2:
+12 1 5 6 
+2 11 0 7 
+14 10 4 9 
+15 3 13 8 
+
+Step 3:
+12 1 0 6 
+2 11 5 7 
+14 10 4 9 
+15 3 13 8 
+
+Step 4:
+12 0 1 6 
+2 11 5 7 
+14 10 4 9 
+15 3 13 8 
+
+Step 5:
+12 11 1 6 
+2 0 5 7 
+14 10 4 9 
+15 3 13 8 
+
+Step 6:
+12 11 1 6 
+2 10 5 7 
+14 0 4 9 
+15 3 13 8 
+
+Step 7:
+12 11 1 6 
+2 10 5 7 
+0 14 4 9 
+15 3 13 8 
+
+Step 8:
+12 11 1 6 
+0 10 5 7 
+2 14 4 9 
+15 3 13 8 
+
+Algorithm: IDA*
+During 73.04688 s. we explore 16741321 nodes, the length of path is 66
+ Close this window to continue...
+Step 0:
+4 6 15 13 
+12 0 10 2 
+8 9 7 3 
+14 5 1 11 
+
+Step 1:
+4 6 15 13 
+12 10 0 2 
+8 9 7 3 
+14 5 1 11 
+
+Step 2:
+4 6 15 13 
+12 10 7 2 
+8 9 0 3 
+14 5 1 11 
+
+Step 3:
+4 6 15 13 
+12 10 7 2 
+8 0 9 3 
+14 5 1 11 
+
+Step 4:
+4 6 15 13 
+12 10 7 2 
+8 5 9 3 
+14 0 1 11 
+
+Step 5:
+4 6 15 13 
+12 10 7 2 
+8 5 9 3 
+14 1 0 11 
+
+Step 6:
+4 6 15 13 
+12 10 7 2 
+8 5 0 3 
+14 1 9 11 
+
+Step 7:
+4 6 15 13 
+12 10 0 2 
+8 5 7 3 
+14 1 9 11 
+
+Algorithm: IDA*
+During 109.45313 s. we explore 21770519 nodes, the length of path is 69
+ Close this window to continue...
+Step 0:
+5 2 8 
+4 0 1 
+7 3 6 
+
+Step 1:
+5 2 8 
+4 1 0 
+7 3 6 
+
+Step 2:
+5 2 0 
+4 1 8 
+7 3 6 
+
+Step 3:
+5 0 2 
+4 1 8 
+7 3 6 
+
+Step 4:
+5 1 2 
+4 0 8 
+7 3 6 
+
+Step 5:
+5 1 2 
+4 8 0 
+7 3 6 
+
+Step 6:
+5 1 2 
+4 8 6 
+7 3 0 
+
+Step 7:
+5 1 2 
+4 8 6 
+7 0 3 
+
+Step 8:
+5 1 2 
+4 0 6 
+7 8 3 
+
+Algorithm: A*
+During 0.00000 s. we explore 621 nodes, the length of path is 23
+ Close this window to continue...
+Step 0:
+6 4 7 
+8 5 1 
+3 2 0 
+
+Step 1:
+6 4 7 
+8 5 1 
+3 0 2 
+
+Step 2:
+6 4 7 
+8 5 1 
+0 3 2 
+
+Step 3:
+6 4 7 
+0 5 1 
+8 3 2 
+
+Step 4:
+0 4 7 
+6 5 1 
+8 3 2 
+
+Step 5:
+4 0 7 
+6 5 1 
+8 3 2 
+
+Step 6:
+4 7 0 
+6 5 1 
+8 3 2 
+
+Step 7:
+4 7 1 
+6 5 0 
+8 3 2 
+
+Algorithm: A*
+During 0.00000 s. we explore 502 nodes, the length of path is 31
+ Close this window to continue...
+Step 0:
+8 6 7 
+2 5 4 
+3 1 0 
+
+Step 1:
+8 6 7 
+2 5 0 
+3 1 4 
+
+Step 2:
+8 6 0 
+2 5 7 
+3 1 4 
+
+Step 3:
+8 0 6 
+2 5 7 
+3 1 4 
+
+Step 4:
+0 8 6 
+2 5 7 
+3 1 4 
+
+Step 5:
+2 8 6 
+0 5 7 
+3 1 4 
+
+Step 6:
+2 8 6 
+3 5 7 
+0 1 4 
+
+Step 7:
+2 8 6 
+3 5 7 
+1 0 4 
+
+Step 8:
+2 8 6 
+3 5 7 
+1 4 0 
+
+Algorithm: A*
+During 0.01563 s. we explore 502 nodes, the length of path is 31
+ Close this window to continue...
+Step 0:
+8 0 13 6 
+1 15 9 14 
+3 4 5 11 
+7 2 10 12 
+
+Step 1:
+0 8 13 6 
+1 15 9 14 
+3 4 5 11 
+7 2 10 12 
+
+Algorithm: A*
+During 0.14063 s. we explore 18975 nodes, the length of path is 80
+ Close this window to continue...
+Step 0:
+2 9 5 11 
+8 3 4 14 
+7 10 1 12 
+15 0 6 13 
+
+Step 1:
+2 9 5 11 
+8 3 4 14 
+7 10 1 12 
+15 6 0 13 
+
+Algorithm: A*
+During 0.09375 s. we explore 9436 nodes, the length of path is 69
+ Close this window to continue...
+Step 0:
+4 0 7 9 
+12 10 11 8 
+14 6 15 1 
+2 5 3 13 
+
+Step 1:
+4 10 7 9 
+12 0 11 8 
+14 6 15 1 
+2 5 3 13 
+
+Step 2:
+4 10 7 9 
+12 6 11 8 
+14 0 15 1 
+2 5 3 13 
+
+Algorithm: A*
+During 0.60938 s. we explore 55964 nodes, the length of path is 86
+ Close this window to continue...
+Step 0:
+12 10 3 2 
+1 7 14 9 
+0 15 5 6 
+8 4 13 11 
+
+Step 1:
+12 10 3 2 
+1 7 14 9 
+8 15 5 6 
+0 4 13 11 
+
+Step 2:
+12 10 3 2 
+1 7 14 9 
+8 15 5 6 
+4 0 13 11 
+
+Algorithm: A*
+During 0.00000 s. we explore 706 nodes, the length of path is 81
+ Close this window to continue...
+Step 0:
+12 1 5 6 
+2 11 0 9 
+14 10 7 4 
+15 3 13 8 
+
+Step 1:
+12 1 5 6 
+2 0 11 9 
+14 10 7 4 
+15 3 13 8 
+
+Algorithm: A*
+During 0.01563 s. we explore 2954 nodes, the length of path is 78
+ Close this window to continue...
+Step 0:
+4 6 15 13 
+12 0 10 2 
+8 9 7 3 
+14 5 1 11 
+
+Algorithm: A*
+During 0.10938 s. we explore 19558 nodes, the length of path is 77
+ Close this window to continue...
+Step 0:
+15 14 13 12 
+11 10 9 8 
+7 6 5 0 
+3 1 2 4 
+
+Step 1:
+15 14 13 12 
+11 10 9 8 
+7 6 0 5 
+3 1 2 4 
+
+Algorithm: A*
+During 0.04688 s. we explore 11105 nodes, the length of path is 102
+ Close this window to continue...
+Step 0:
+5 2 8 
+4 0 1 
+7 3 6 
+
+Step 1:
+5 2 8 
+4 1 0 
+7 3 6 
+
+Algorithm: IDA*
+During 0.00000 s. we explore 217 nodes, the length of path is 25
+ Close this window to continue...
+Step 0:
+6 4 7 
+8 5 1 
+3 2 0 
+
+Step 1:
+6 4 7 
+8 5 1 
+3 0 2 
+
+Step 2:
+6 4 7 
+8 5 1 
+0 3 2 
+
+Algorithm: IDA*
+During 0.00000 s. we explore 159 nodes, the length of path is 51
+ Close this window to continue...
+Step 0:
+8 6 7 
+2 5 4 
+3 1 0 
+
+Step 1:
+8 6 7 
+2 5 0 
+3 1 4 
+
+Algorithm: IDA*
+During 0.00000 s. we explore 670 nodes, the length of path is 45
+ Close this window to continue...
+Step 0:
+8 0 13 6 
+1 15 9 14 
+3 4 5 11 
+7 2 10 12 
+
+Step 1:
+0 8 13 6 
+1 15 9 14 
+3 4 5 11 
+7 2 10 12 
+
+Step 2:
+1 8 13 6 
+0 15 9 14 
+3 4 5 11 
+7 2 10 12 
+
+Step 3:
+1 8 13 6 
+3 15 9 14 
+0 4 5 11 
+7 2 10 12 
+
+Algorithm: IDA*
+During 0.09375 s. we explore 28850 nodes, the length of path is 120
+ Close this window to continue...
+Step 0:
+2 9 5 11 
+8 3 4 14 
+7 10 1 12 
+15 0 6 13 
+
+Step 1:
+2 9 5 11 
+8 3 4 14 
+7 10 1 12 
+15 6 0 13 
+
+Algorithm: IDA*
+During 0.07813 s. we explore 19163 nodes, the length of path is 95
+ Close this window to continue...
+Step 0:
+4 0 7 9 
+12 10 11 8 
+14 6 15 1 
+2 5 3 13 
+
+Step 1:
+4 10 7 9 
+12 0 11 8 
+14 6 15 1 
+2 5 3 13 
+
+Algorithm: IDA*
+During 0.00000 s. we explore 731 nodes, the length of path is 100
+ Close this window to continue...
+Step 0:
+12 10 3 2 
+1 7 14 9 
+0 15 5 6 
+8 4 13 11 
+
+Step 1:
+12 10 3 2 
+1 7 14 9 
+8 15 5 6 
+0 4 13 11 
+
+Algorithm: IDA*
+During 0.01563 s. we explore 8043 nodes, the length of path is 109
+ Close this window to continue...
+Step 0:
+12 1 5 6 
+2 11 7 9 
+14 0 10 4 
+15 3 13 8 
+
+Step 1:
+12 1 5 6 
+2 11 7 9 
+14 3 10 4 
+15 0 13 8 
+
+Algorithm: IDA*
+During 0.01563 s. we explore 6700 nodes, the length of path is 96
+ Close this window to continue...
+Step 0:
+4 6 15 13 
+12 9 10 2 
+0 8 7 3 
+14 5 1 11 
+
+Step 1:
+4 6 15 13 
+0 9 10 2 
+12 8 7 3 
+14 5 1 11 
+
+Step 2:
+4 6 15 13 
+9 0 10 2 
+12 8 7 3 
+14 5 1 11 
+
+Algorithm: IDA*
+During 0.07813 s. we explore 19948 nodes, the length of path is 113
+ Close this window to continue...
+Step 0:
+15 14 13 12 
+11 10 9 8 
+7 6 5 4 
+3 1 0 2 
+
+Step 1:
+15 14 13 12 
+11 10 9 8 
+7 6 0 4 
+3 1 5 2 
+
+Step 2:
+15 14 13 12 
+11 10 0 8 
+7 6 9 4 
+3 1 5 2 
+
+Algorithm: IDA*
+During 0.03125 s. we explore 10782 nodes, the length of path is 126
+ Close this window to continue...
+Step 0:
+5 2 8 
+4 0 1 
+7 3 6 
+
+Step 1:
+5 2 8 
+4 1 0 
+7 3 6 
+
+Step 2:
+5 2 0 
+4 1 8 
+7 3 6 
+
+Step 3:
+5 0 2 
+4 1 8 
+7 3 6 
+
+Step 4:
+5 1 2 
+4 0 8 
+7 3 6 
+
+Step 5:
+5 1 2 
+4 8 0 
+7 3 6 
+
+Step 6:
+5 1 2 
+4 8 6 
+7 3 0 
+
+Step 7:
+5 1 2 
+4 8 6 
+7 0 3 
+
+Step 8:
+5 1 2 
+4 0 6 
+7 8 3 
+
+Step 9:
+5 1 2 
+4 6 0 
+7 8 3 
+
+Step 10:
+5 1 2 
+4 6 3 
+7 8 0 
+
+Step 11:
+5 1 2 
+4 6 3 
+7 0 8 
+
+Step 12:
+5 1 2 
+4 6 3 
+0 7 8 
+
+Step 13:
+5 1 2 
+0 6 3 
+4 7 8 
+
+Step 14:
+0 1 2 
+5 6 3 
+4 7 8 
+
+Step 15:
+1 0 2 
+5 6 3 
+4 7 8 
+
+Step 16:
+1 2 0 
+5 6 3 
+4 7 8 
+
+Step 17:
+1 2 3 
+5 6 0 
+4 7 8 
+
+Step 18:
+1 2 3 
+5 0 6 
+4 7 8 
+
+Step 19:
+1 2 3 
+0 5 6 
+4 7 8 
+
+Step 20:
+1 2 3 
+4 5 6 
+0 7 8 
+
+Step 21:
+1 2 3 
+4 5 6 
+7 0 8 
+
+Step 22:
+1 2 3 
+4 5 6 
+7 8 0 
+
+Algorithm: A*
+During 0.00000 s. we explore 621 nodes, the length of path is 23
+ Close this window to continue...
+Step 0:
+6 4 7 
+8 5 1 
+3 2 0 
+
+Step 1:
+6 4 7 
+8 5 1 
+3 0 2 
+
+Step 2:
+6 4 7 
+8 5 1 
+0 3 2 
+
+Step 3:
+6 4 7 
+0 5 1 
+8 3 2 
+
+Step 4:
+0 4 7 
+6 5 1 
+8 3 2 
+
+Step 5:
+4 0 7 
+6 5 1 
+8 3 2 
+
+Step 6:
+4 7 0 
+6 5 1 
+8 3 2 
+
+Step 7:
+4 7 1 
+6 5 0 
+8 3 2 
+
+Step 8:
+4 7 1 
+6 5 2 
+8 3 0 
+
+Step 9:
+4 7 1 
+6 5 2 
+8 0 3 
+
+Step 10:
+4 7 1 
+6 0 2 
+8 5 3 
+
+Step 11:
+4 0 1 
+6 7 2 
+8 5 3 
+
+Step 12:
+4 1 0 
+6 7 2 
+8 5 3 
+
+Step 13:
+4 1 2 
+6 7 0 
+8 5 3 
+
+Step 14:
+4 1 2 
+6 7 3 
+8 5 0 
+
+Step 15:
+4 1 2 
+6 7 3 
+8 0 5 
+
+Step 16:
+4 1 2 
+6 0 3 
+8 7 5 
+
+Step 17:
+4 1 2 
+0 6 3 
+8 7 5 
+
+Step 18:
+4 1 2 
+8 6 3 
+0 7 5 
+
+Step 19:
+4 1 2 
+8 6 3 
+7 0 5 
+
+Step 20:
+4 1 2 
+8 0 3 
+7 6 5 
+
+Step 21:
+4 1 2 
+0 8 3 
+7 6 5 
+
+Step 22:
+0 1 2 
+4 8 3 
+7 6 5 
+
+Step 23:
+1 0 2 
+4 8 3 
+7 6 5 
+
+Step 24:
+1 2 0 
+4 8 3 
+7 6 5 
+
+Step 25:
+1 2 3 
+4 8 0 
+7 6 5 
+
+Step 26:
+1 2 3 
+4 8 5 
+7 6 0 
+
+Step 27:
+1 2 3 
+4 8 5 
+7 0 6 
+
+Step 28:
+1 2 3 
+4 0 5 
+7 8 6 
+
+Step 29:
+1 2 3 
+4 5 0 
+7 8 6 
+
+Step 30:
+1 2 3 
+4 5 6 
+7 8 0 
+
+Algorithm: A*
+During 0.00000 s. we explore 502 nodes, the length of path is 31
+ Close this window to continue...
+Step 0:
+8 6 7 
+2 5 4 
+3 1 0 
+
+Step 1:
+8 6 7 
+2 5 0 
+3 1 4 
+
+Step 2:
+8 6 0 
+2 5 7 
+3 1 4 
+
+Step 3:
+8 0 6 
+2 5 7 
+3 1 4 
+
+Step 4:
+0 8 6 
+2 5 7 
+3 1 4 
+
+Step 5:
+2 8 6 
+0 5 7 
+3 1 4 
+
+Step 6:
+2 8 6 
+3 5 7 
+0 1 4 
+
+Step 7:
+2 8 6 
+3 5 7 
+1 0 4 
+
+Step 8:
+2 8 6 
+3 5 7 
+1 4 0 
+
+Step 9:
+2 8 6 
+3 5 0 
+1 4 7 
+
+Step 10:
+2 8 6 
+3 0 5 
+1 4 7 
+
+Step 11:
+2 8 6 
+0 3 5 
+1 4 7 
+
+Algorithm: A*
+During 0.01563 s. we explore 502 nodes, the length of path is 31
+ Close this window to continue...
+Step 0:
+8 0 13 6 
+1 15 9 14 
+3 4 5 11 
+7 2 10 12 
+
+Step 1:
+0 8 13 6 
+1 15 9 14 
+3 4 5 11 
+7 2 10 12 
+
+Step 2:
+1 8 13 6 
+0 15 9 14 
+3 4 5 11 
+7 2 10 12 
+
+Step 3:
+1 8 13 6 
+3 15 9 14 
+0 4 5 11 
+7 2 10 12 
+
+Step 4:
+1 8 13 6 
+3 15 9 14 
+4 0 5 11 
+7 2 10 12 
+
+Step 5:
+1 8 13 6 
+3 0 9 14 
+4 15 5 11 
+7 2 10 12 
+
+Step 6:
+1 8 13 6 
+3 9 0 14 
+4 15 5 11 
+7 2 10 12 
+
+Step 7:
+1 8 13 6 
+3 9 5 14 
+4 15 0 11 
+7 2 10 12 
+
+Step 8:
+1 8 13 6 
+3 9 5 14 
+4 0 15 11 
+7 2 10 12 
+
+Step 9:
+1 8 13 6 
+3 0 5 14 
+4 9 15 11 
+7 2 10 12 
+
+Step 10:
+1 8 13 6 
+0 3 5 14 
+4 9 15 11 
+7 2 10 12 
+
+Step 11:
+1 8 13 6 
+4 3 5 14 
+0 9 15 11 
+7 2 10 12 
+
+Step 12:
+1 8 13 6 
+4 3 5 14 
+9 0 15 11 
+7 2 10 12 
+
+Step 13:
+1 8 13 6 
+4 3 5 14 
+9 2 15 11 
+7 0 10 12 
+
+Step 14:
+1 8 13 6 
+4 3 5 14 
+9 2 15 11 
+7 10 0 12 
+
+Step 15:
+1 8 13 6 
+4 3 5 14 
+9 2 0 11 
+7 10 15 12 
+
+Step 16:
+1 8 13 6 
+4 3 5 14 
+9 2 11 0 
+7 10 15 12 
+
+Step 17:
+1 8 13 6 
+4 3 5 0 
+9 2 11 14 
+7 10 15 12 
+
+Step 18:
+1 8 13 0 
+4 3 5 6 
+9 2 11 14 
+7 10 15 12 
+
+Step 19:
+1 8 0 13 
+4 3 5 6 
+9 2 11 14 
+7 10 15 12 
+
+Step 20:
+1 0 8 13 
+4 3 5 6 
+9 2 11 14 
+7 10 15 12 
+
+Step 21:
+1 3 8 13 
+4 0 5 6 
+9 2 11 14 
+7 10 15 12 
+
+Step 22:
+1 3 8 13 
+4 5 0 6 
+9 2 11 14 
+7 10 15 12 
+
+Step 23:
+1 3 8 13 
+4 5 6 0 
+9 2 11 14 
+7 10 15 12 
+
+Step 24:
+1 3 8 0 
+4 5 6 13 
+9 2 11 14 
+7 10 15 12 
+
+Step 25:
+1 3 0 8 
+4 5 6 13 
+9 2 11 14 
+7 10 15 12 
+
+Step 26:
+1 0 3 8 
+4 5 6 13 
+9 2 11 14 
+7 10 15 12 
+
+Step 27:
+1 5 3 8 
+4 0 6 13 
+9 2 11 14 
+7 10 15 12 
+
+Step 28:
+1 5 3 8 
+0 4 6 13 
+9 2 11 14 
+7 10 15 12 
+
+Step 29:
+0 5 3 8 
+1 4 6 13 
+9 2 11 14 
+7 10 15 12 
+
+Step 30:
+5 0 3 8 
+1 4 6 13 
+9 2 11 14 
+7 10 15 12 
+
+Step 31:
+5 4 3 8 
+1 0 6 13 
+9 2 11 14 
+7 10 15 12 
+
+Step 32:
+5 4 3 8 
+1 6 0 13 
+9 2 11 14 
+7 10 15 12 
+
+Step 33:
+5 4 0 8 
+1 6 3 13 
+9 2 11 14 
+7 10 15 12 
+
+Step 34:
+5 0 4 8 
+1 6 3 13 
+9 2 11 14 
+7 10 15 12 
+
+Step 35:
+5 6 4 8 
+1 0 3 13 
+9 2 11 14 
+7 10 15 12 
+
+Step 36:
+5 6 4 8 
+1 2 3 13 
+9 0 11 14 
+7 10 15 12 
+
+Step 37:
+5 6 4 8 
+1 2 3 13 
+9 11 0 14 
+7 10 15 12 
+
+Step 38:
+5 6 4 8 
+1 2 3 13 
+9 11 14 0 
+7 10 15 12 
+
+Step 39:
+5 6 4 8 
+1 2 3 0 
+9 11 14 13 
+7 10 15 12 
+
+Step 40:
+5 6 4 0 
+1 2 3 8 
+9 11 14 13 
+7 10 15 12 
+
+Step 41:
+5 6 0 4 
+1 2 3 8 
+9 11 14 13 
+7 10 15 12 
+
+Step 42:
+5 6 3 4 
+1 2 0 8 
+9 11 14 13 
+7 10 15 12 
+
+Step 43:
+5 6 3 4 
+1 2 14 8 
+9 11 0 13 
+7 10 15 12 
+
+Step 44:
+5 6 3 4 
+1 2 14 8 
+9 11 13 0 
+7 10 15 12 
+
+Step 45:
+5 6 3 4 
+1 2 14 8 
+9 11 13 12 
+7 10 15 0 
+
+Step 46:
+5 6 3 4 
+1 2 14 8 
+9 11 13 12 
+7 10 0 15 
+
+Step 47:
+5 6 3 4 
+1 2 14 8 
+9 11 0 12 
+7 10 13 15 
+
+Step 48:
+5 6 3 4 
+1 2 14 8 
+9 0 11 12 
+7 10 13 15 
+
+Step 49:
+5 6 3 4 
+1 2 14 8 
+9 10 11 12 
+7 0 13 15 
+
+Step 50:
+5 6 3 4 
+1 2 14 8 
+9 10 11 12 
+0 7 13 15 
+
+Step 51:
+5 6 3 4 
+1 2 14 8 
+0 10 11 12 
+9 7 13 15 
+
+Step 52:
+5 6 3 4 
+1 2 14 8 
+10 0 11 12 
+9 7 13 15 
+
+Step 53:
+5 6 3 4 
+1 2 14 8 
+10 7 11 12 
+9 0 13 15 
+
+Step 54:
+5 6 3 4 
+1 2 14 8 
+10 7 11 12 
+9 13 0 15 
+
+Step 55:
+5 6 3 4 
+1 2 14 8 
+10 7 0 12 
+9 13 11 15 
+
+Step 56:
+5 6 3 4 
+1 2 14 8 
+10 0 7 12 
+9 13 11 15 
+
+Step 57:
+5 6 3 4 
+1 2 14 8 
+0 10 7 12 
+9 13 11 15 
+
+Step 58:
+5 6 3 4 
+0 2 14 8 
+1 10 7 12 
+9 13 11 15 
+
+Step 59:
+5 6 3 4 
+2 0 14 8 
+1 10 7 12 
+9 13 11 15 
+
+Step 60:
+5 6 3 4 
+2 14 0 8 
+1 10 7 12 
+9 13 11 15 
+
+Step 61:
+5 6 3 4 
+2 14 7 8 
+1 10 0 12 
+9 13 11 15 
+
+Step 62:
+5 6 3 4 
+2 14 7 8 
+1 0 10 12 
+9 13 11 15 
+
+Step 63:
+5 6 3 4 
+2 0 7 8 
+1 14 10 12 
+9 13 11 15 
+
+Step 64:
+5 0 3 4 
+2 6 7 8 
+1 14 10 12 
+9 13 11 15 
+
+Step 65:
+0 5 3 4 
+2 6 7 8 
+1 14 10 12 
+9 13 11 15 
+
+Step 66:
+2 5 3 4 
+0 6 7 8 
+1 14 10 12 
+9 13 11 15 
+
+Step 67:
+2 5 3 4 
+1 6 7 8 
+0 14 10 12 
+9 13 11 15 
+
+Step 68:
+2 5 3 4 
+1 6 7 8 
+9 14 10 12 
+0 13 11 15 
+
+Step 69:
+2 5 3 4 
+1 6 7 8 
+9 14 10 12 
+13 0 11 15 
+
+Step 70:
+2 5 3 4 
+1 6 7 8 
+9 0 10 12 
+13 14 11 15 
+
+Step 71:
+2 5 3 4 
+1 0 7 8 
+9 6 10 12 
+13 14 11 15 
+
+Step 72:
+2 0 3 4 
+1 5 7 8 
+9 6 10 12 
+13 14 11 15 
+
+Step 73:
+0 2 3 4 
+1 5 7 8 
+9 6 10 12 
+13 14 11 15 
+
+Step 74:
+1 2 3 4 
+0 5 7 8 
+9 6 10 12 
+13 14 11 15 
+
+Step 75:
+1 2 3 4 
+5 0 7 8 
+9 6 10 12 
+13 14 11 15 
+
+Step 76:
+1 2 3 4 
+5 6 7 8 
+9 0 10 12 
+13 14 11 15 
+
+Step 77:
+1 2 3 4 
+5 6 7 8 
+9 10 0 12 
+13 14 11 15 
+
+Step 78:
+1 2 3 4 
+5 6 7 8 
+9 10 11 12 
+13 14 0 15 
+
+Step 79:
+1 2 3 4 
+5 6 7 8 
+9 10 11 12 
+13 14 15 0 
+
+Algorithm: A*
+During 0.15625 s. we explore 18818 nodes, the length of path is 80
+ Close this window to continue...
+Step 0:
+2 9 5 11 
+8 3 4 14 
+7 10 1 12 
+15 0 6 13 
+
+Step 1:
+2 9 5 11 
+8 3 4 14 
+7 10 1 12 
+15 6 0 13 
+
+Step 2:
+2 9 5 11 
+8 3 4 14 
+7 10 1 12 
+15 6 13 0 
+
+Step 3:
+2 9 5 11 
+8 3 4 14 
+7 10 1 0 
+15 6 13 12 
+
+Step 4:
+2 9 5 11 
+8 3 4 0 
+7 10 1 14 
+15 6 13 12 
+
+Step 5:
+2 9 5 11 
+8 3 0 4 
+7 10 1 14 
+15 6 13 12 
+
+Step 6:
+2 9 5 11 
+8 0 3 4 
+7 10 1 14 
+15 6 13 12 
+
